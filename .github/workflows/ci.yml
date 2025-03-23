@@ -26,8 +26,11 @@ jobs:
         run: |
           mkdocs build
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./site
 
@@ -42,11 +45,9 @@ jobs:
 
     environment:
       name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Download artifact
-        uses: actions/download-pages-artifact@v1
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
