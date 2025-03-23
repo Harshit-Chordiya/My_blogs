@@ -53,6 +53,7 @@ nav:
   - Mycode:
       - C++: coding/file1forcoding.md
   - About:
+      - Current Projects: about/projects.md
       - About Me: about/about.md
       - Childhood: about/childhood.md
   - Tags: tags.md
