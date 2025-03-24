@@ -1,6 +1,6 @@
 mkdocs
 mkdocs-material
-mkdocs-blog
+mkdocs-material-extensions
 mkdocs-pdf
 mkdocs-tags
 pymdown-extensions
