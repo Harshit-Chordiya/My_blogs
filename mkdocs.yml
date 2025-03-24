@@ -51,8 +51,7 @@ extra:
 
 plugins:
   - search
-  - tags:
-      tags_file: tags.md
+  - tags
   - mkdocs-pdf
   - blog:
       blog_toc: true
